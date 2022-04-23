@@ -9,11 +9,11 @@ export const AddCategory = ({ setCategories }) => {
     }
 
     const handleSubmit = (e) =>{
-e.preventDefault();
-if(InputValue.trim().length > 2){
-    // setCategories('');
-    setCategories(categories=>[InputValue,...categories]);
-    setInputValue('');
+      e.preventDefault();
+      if(InputValue.trim().length > 2){
+          // setCategories('');
+          setCategories(categories=>[InputValue,...categories]);
+          setInputValue('');
 }
     }
      return (
